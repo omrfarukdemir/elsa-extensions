@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>
+            Provides integration with Wordpress.
+        </Description>
+        <PackageTags>elsa extension module wordpress</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Elsa"/>
+        <PackageReference Include="Elsa.Features" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Activities\" />
+    </ItemGroup>
+</Project>
