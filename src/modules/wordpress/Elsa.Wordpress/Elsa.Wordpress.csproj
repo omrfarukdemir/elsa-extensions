@@ -11,6 +11,6 @@
         <PackageReference Include="Elsa.Features" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Activities\" />
+      <Folder Include="Services\" />
     </ItemGroup>
 </Project>

@@ -1,0 +1,24 @@
+using Elsa.WordPress.Activities;
+using Elsa.Workflows;
+using Elsa.Workflows.Attributes;
+using JetBrains.Annotations;
+
+namespace Elsa.Wordpress.Activities.Tags;
+
+/// <summary>
+/// Triggers when a new user is added.
+/// </summary>
+[Activity(
+    "Elsa.Wordpress.Tags",
+    "Wordpress Tags",
+    "Triggers when a new tag is added.",
+    DisplayName = "Tag Added")]
+[UsedImplicitly]
+public class WatchTags : WordpressTriggerActivity
+{
+    // Implementation for watching tags
+    public override ValueTask<IEnumerable<object>> GetTriggerPayloadsAsync(TriggerIndexingContext context)
+    {
+        throw new NotImplementedException();
+    }
+}
