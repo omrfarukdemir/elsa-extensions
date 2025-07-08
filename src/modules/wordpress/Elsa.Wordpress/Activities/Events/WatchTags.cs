@@ -3,20 +3,20 @@ using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using JetBrains.Annotations;
 
-namespace Elsa.Wordpress.Activities.Posts;
+namespace Elsa.Wordpress.Activities.Events;
 
 /// <summary>
-/// Triggers when a new post is added.
+/// Triggers when a new user is added.
 /// </summary>
 [Activity(
-    "Elsa.Wordpress.Posts",
-    "Wordpress Posts",
-    "Triggers when a new post is added.",
-    DisplayName = "Created Post")]
+    "Elsa.Wordpress.Events",
+    "Wordpress Events",
+    "Triggers when a new tag is added.",
+    DisplayName = "Watch Tag")]
 [UsedImplicitly]
-public class WatchPosts : WordpressTriggerActivity
+public class WatchTags : WordpressTriggerActivity
 {
-    // Implementation for watching posts
+    // Implementation for watching tags
     public override ValueTask<IEnumerable<object>> GetTriggerPayloadsAsync(TriggerIndexingContext context)
     {
         throw new NotImplementedException();

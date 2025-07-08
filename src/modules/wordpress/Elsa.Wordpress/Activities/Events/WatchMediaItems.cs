@@ -3,20 +3,20 @@ using Elsa.Workflows;
 using Elsa.Workflows.Attributes;
 using JetBrains.Annotations;
 
-namespace Elsa.Wordpress.Activities.Posts;
+namespace Elsa.Wordpress.Activities.Events;
 
 /// <summary>
-/// Triggers when a post is updated.
+/// Triggers when a new media item is added.
 /// </summary>
 [Activity(
-    "Elsa.Wordpress.Posts",
-    "Wordpress Posts",
-    "Triggers when a post is updated.",
-    DisplayName = "Updated Post")]
+    "Elsa.Wordpress.Events",
+    "Wordpress Events",
+    "Triggers when a new media item is added.",
+    DisplayName = "Watch Media Item")]
 [UsedImplicitly]
-public class WatchPostsUpdated : WordpressTriggerActivity
+public class WatchMediaItems : WordpressTriggerActivity
 {
-    // Implementation for watching updated posts
+    // Implementation for watching media items
     public override ValueTask<IEnumerable<object>> GetTriggerPayloadsAsync(TriggerIndexingContext context)
     {
         throw new NotImplementedException();
